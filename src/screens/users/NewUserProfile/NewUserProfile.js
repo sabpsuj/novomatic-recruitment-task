@@ -1,7 +1,7 @@
 const newUserProfileTheme = {
   userPaper: {
     maxWidth: '432px',
-    margin: '48px auto 0',
+    margin: '48px auto 32px',
     display: 'flex',
     alignItems: 'baseline',
     padding: '31px 21px',

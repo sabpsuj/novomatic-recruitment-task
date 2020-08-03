@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+
 import Box from '@material-ui/core/Box';
-import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
@@ -12,30 +12,10 @@ import AddIcon from '@material-ui/icons/Add';
 import UsersList from './UsersList';
 import { loadUsers } from '../../redux/actions/usersActions';
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    borderRadius: '0'
-  },
-  button: {
-    margin: theme.spacing(1),
-    backgroundColor: '#617D8B',
-    color: '#fff'
-  },
-  lalala: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '24px 24px 0'
-  },
-  title: {
-    fontSize: '1.5rem'
-  },
-  link: {
-    textDecoration: 'none',
-    color: '#fff'
-  }
-}));
+import { makeStyles } from '@material-ui/core/styles';
+import usersTheme from "./Users";
 
+const useStyles = makeStyles((theme) => (usersTheme));
 
 const Users = () => {
   const dispatch = useDispatch();

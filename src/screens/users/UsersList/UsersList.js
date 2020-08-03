@@ -1,6 +1,7 @@
 const usersListTheme = {
   list: {
-    padding: '0 24px 24px'
+    padding: '0 24px 24px',
+    marginBottom: '32px'
   },
   listItem: {
     borderRadius: '4px',
