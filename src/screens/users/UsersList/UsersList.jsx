@@ -7,35 +7,15 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
-  list: {
-    padding: '0 24px 24px'
-  },
-  listItem: {
-    borderRadius: '4px',
-    border: '1px solid #EEF0F1',
-    margin: '12px 0'
-  },
-  avatar: {
-    width: '120px',
-    height: '90px',
-    borderRadius: '0'
-  },
-  link: {
-    textDecoration: 'none',
-    color: '#000'
-  }
-}));
+import { makeStyles } from '@material-ui/core/styles';
+import usersListTheme from './UsersList';
+
+const useStyles = makeStyles((theme) => (usersListTheme));
 
 const UsersList = () => {
   const users = useSelector(state => state.users.data);
   const classes = useStyles();
-  let lengths = [];
-
-  lengths.push(users.length);
-  console.log(lengths);
 
   return (
     <List className={classes.list}>

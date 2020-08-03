@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { makeStyles } from '@material-ui/core/styles';
 
 import Users from './users';
 import TopBar from './_shared/TopBar';
@@ -9,6 +7,7 @@ import Footer from './_shared/Footer';
 import UserProfile from './users/UserProfile';
 import NewUserProfile from './users/NewUserProfile';
 
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
   container: {

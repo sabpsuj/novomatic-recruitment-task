@@ -24,3 +24,4 @@ To start the application:
 ```
 npm start
 ```
+# novomatic-recruitment-task

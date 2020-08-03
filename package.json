@@ -144,18 +144,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "description": "## To do:",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/novomatic-tech/fux-recruitment-task.git"
-  },
-  "author": "Sabina Psuj",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/novomatic-tech/fux-recruitment-task/issues"
-  },
-  "homepage": "https://github.com/novomatic-tech/fux-recruitment-task#readme"
+  }
 }

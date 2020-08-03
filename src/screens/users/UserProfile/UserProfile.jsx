@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
+
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
@@ -10,44 +10,10 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
-const useStyles = makeStyles((theme) => ({
-  userPaper: {
-    maxWidth: '432px',
-    margin: '48px auto 0',
-    display: 'flex',
-    alignItems: 'baseline',
-    padding: '31px 21px',
-  },
-  paperHeader: {
-    padding: '0',
-    alignSelf: 'start'
-  },
-  button: {
-    padding: '0',
-    '&:hover' : {
-      backgroundColor: 'transparent'
-    }
-  },
-  title: {
-    fontSize: '24px',
-    lineHeight: '1'
-  },
-  input: {
-    width: '100%',
-    height: '56px',
-    color: '#000 !important',
-    margin: '16px 0'
-  },
-  paperFooter: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    padding: '16px 0 0 75px'
-  },
-  link: {
-    textDecoration: 'none',
-    color: '#fff'
-  }
-}));
+import { makeStyles } from '@material-ui/core/styles';
+import userProfileTheme from './UserProfile';
+
+const useStyles = makeStyles((theme) => (userProfileTheme));
 
 const UserProfile = () => {
   const users = useSelector(state => state.users.data);
